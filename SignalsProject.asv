@@ -23,8 +23,7 @@ plot(t,x)
 
 clc
 txt = input("Do you want to perform an operation on the signal ? Y/N [Y]: ","s");
-while ( strcmp(txt,"Y") || strcmp(txt,"y"))
-    clc
+if ( strcmp(txt,"Y") || strcmp(txt,"y"))
     disp("Enter the letter of your choice")
     disp("a.Amplitude Scaling")
     disp("b.Time reversal")
@@ -52,18 +51,17 @@ while ( strcmp(txt,"Y") || strcmp(txt,"y"))
             plot(t,x)
         case 'd'
             expand=input("Enter the Expanding value");
-            t=t.*expand;
+            
            figure
-           plot(t,x)
+           plot(t.*expand,x)
         case 'e'
             compress=input("Enter the Compressing value");
-            t=t./compress;
             figure
-            plot(t,x)
+            plot(t./compress,x)
         otherwise
            
     end
-    txt = input("Do you want to perform any other operation ? Y/N : ","s");
+    
 end
  disp("Thank you for using our signal generator.")
  disp("Feel free to leave a tip for the developers")
