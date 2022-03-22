@@ -8,20 +8,9 @@ end_t=input("Enter the end time of the Signal ");
 
 t = linspace(start_t,end_t,freq);
 
-brk_pts=input("Enter the number of break points in the signal");
-
 
 %sherif
 x = sin(2*pi*t);
-
-
-
-
-
-
-
-
-
 
 
 
