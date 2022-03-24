@@ -1,0 +1,9 @@
+1- made a vector "functions" for the function x where we add all the functions of size equal to sampling 
+
+2-2 new var next_s current_s to shows the indexing of "functions" where you will add each function
+
+3-added the end point to break points
+
+4-removed the if statement that checks if the break point equal to 0 for two reasons:
+	1-redundunt 
+	2-if you don't want a break point you won't be able to acess the signal generator code
